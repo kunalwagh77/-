@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>🙏शिवप्रतिष्ठान आयोजित गणेशोत्सव🙏</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #fff3e0;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    header {
+        background: orange;
+        color: white;
+        padding: 20px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .main-image {
+        margin-top: 15px;
+    }
+    .main-image img {
+        max-width: 90%;
+        height: auto;
+        border: 8px solid gold;
+        border-radius: 15px;
+        box-shadow: 0 0 25px rgba(255, 102, 0, 0.8);
+    }
+    .options {
+        margin: 20px 0;
+    }
+    .btn {
+        background: red;
+        color: white;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background: darkred;
+    }
+    section {
+        display: none;
+        padding: 20px;
+    }
+    .active {
+        display: block;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+        padding: 10px;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .youtube-link {
+        margin: 20px 0;
+    }
+    .youtube-link a {
+        background: #ff0000;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .youtube-link a:hover {
+        background: darkred;
+    }
+
+    /* Management Section */
+    #management {
+        background:#fff3e0; 
+        padding: 30px; 
+        margin: 20px auto; 
+        max-width: 900px; 
+        border-radius: 15px; 
+        box-shadow: 0 0 15px rgba(255, 152, 0, 0.5); 
+        color: #5d4037;
+        text-align: left;
+    }
+    #management h2 {
+        color: #ff6f00; 
+        text-align: center; 
+        margin-bottom: 20px;
+    }
+    #management ul {
+        list-style-type: none; 
+        padding: 0; 
+        font-size: 18px;
+    }
+    #management ul li {
+        margin-bottom: 10px;
+    }
+    #management .images-vertical {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin-top: 30px;
+    }
+    #management .images-vertical img {
+        width: 80%;
+        max-width: 600px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    /* Social Media Section */
+    #social {
+        background:#fff3e0; 
+        padding: 30px; 
+        margin: 20px auto; 
+        max-width: 900px; 
+        border-radius: 15px; 
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    #social h2 {
+        color: #3b5998;
+        margin-bottom: 20px;
+    }
+    #social a {
+        background: #4caf50;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 10px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    #social a.instagram {
+        background: #E1306C;
+    }
+    #social a.youtube {
+        background: #FF0000;
+    }
+    #social a:hover {
+        opacity: 0.9;
+    }
+</style>
+</head>
+<body>
+
+<header>🙏शिवप्रतिष्ठान आयोजित गणेशोत्सव🙏</header>
+
+<!-- Main Center Image -->
+<div class="main-image">
+    <img src="photo-1567591414240-e9c1e59f3e06.jpeg" alt="Lord Ganesha" />
+</div>
+
+<!-- YouTube Channel Link -->
+<div class="youtube-link">
+    <a href="https://www.youtube.com/@motivationalvideo7743" target="_blank">🎥 YouTube पाहा</a>
+</div>
+
+<!-- Navigation Buttons -->
+<div class="options">
+    <a href="#about" class="btn" onclick="showSection('about')">आपली ओळख</a>
+    <a href="#events" class="btn" onclick="showSection('events')">कार्यक्रम</a>
+    <a href="#gallery" class="btn" onclick="showSection('gallery')">गॅलरी</a>
+    <a href="#contact" class="btn" onclick="showSection('contact')">संपर्क</a>
+    <a href="#management" class="btn" onclick="showSection('management')">प्रबंधक मंडळ</a>
+    <a href="#social" class="btn" onclick="showSection('social')">सोशल मीडिया</a>
+</div>
+
+<section id="about">
+    <h2>आपली ओळख</h2>
+    <p>आमचा गणेशोत्सव प्रेम, श्रद्धा आणि आनंद यांच्यासह साजरा केला जातो.</p>
+</section>
+
+<section id="events">
+    <h2>कार्यक्रम</h2>
+    <p>🎶 सांस्कृतिक उपक्रम, आरती, भजन व स्पर्धा</p>
+</section>
+
+<section id="gallery">
+    <h2>गॅलरी</h2>
+    <div class="gallery">
+        <img src="e47fb579-e609-4846-a2c9-34283d04660a.jpeg" alt="Ganesh 1" />
+        <img src="ee6eff68-30f6-46f6-8e20-6a073dda2d08.jpeg" alt="Ganesh 2" />
+        <img src="3e6f2233-10ab-42ec-9791-099f652196aa.jpeg" alt="Ganesh 3" />
+        <img src="5fc32c88-a9a4-4136-920a-730bca22d9f1.jpeg" alt="Ganesh 4" />
+        <img src="39ec5ecf-11a2-4e42-be99-b68b1c23c6aa.jpeg" alt="Ganesh 5" />
+    </div>
+</section>
+
+<section id="contact">
+    <h2>संपर्क</h2>
+    <ul style="list-style:none; padding:0; font-size:16px; text-align:left; max-width:350px; margin:auto; background:#fff3cd; padding:15px; border-radius:10px;">
+        <li>1 - समाधान बच्छाव : <a href="https://wa.me/919834120843" target="_blank">98341 20843</a></li>
+        <li>2 - कुणाल वाघ : <a href="https://wa.me/918767338510" target="_blank">87673 38510</a></li>
+        <li>3 - भूषण वाघ : <a href="https://wa.me/917972015253" target="_blank">79720 15253</a></li>
+        <li>4 - स्वप्नील वाघ : <a href="https://wa.me/919518519357" target="_blank">95185 19357</a></li>
+        <li>5 - कल्पेश वाघ : <a href="https://wa.me/918459198536" target="_blank">84591 98536</a></li>
+        <li>6 - ज्ञानेश्वर वाघ : <a href="https://wa.me/917666186527" target="_blank">76661 86527</a></li>
+        <li>7 - रोहित सूर्यवंशी : <a href="https://wa.me/917821925352" target="_blank">78219 25352</a></li>
+        <li>8 - मयूर राजपूत : <a href="https://wa.me/917020041992" target="_blank">70200 41992</a></li>
+        <li>9 - विकास राजपूत : <a href="https://wa.me/918999284778" target="_blank">89992 84778</a></li>
+        <li>10 - सोपान वाघ : <a href="https://wa.me/917620809912" target="_blank">76208 09912</a></li>
+        <li>11 - पंकज वाघ : <a href="https://wa.me/918668414911" target="_blank">86684 14911</a></li>
+        <li>12 - कल्पेश एम वाघ : <a href="https://wa.me/918767747585" target="_blank">87677 47585</a></li>
+    </ul>
+</section>
+
+<section id="management">
+  <h2>प्रबंधक मंडळ</h2>
+  <ul>
+    <li>• समाधान बच्छाव</li>
+    <li>• कुणाल वाघ</li>
+    <li>• भूषण वाघ</li>
+    <li>• स्वप्नील वाघ</li>
+    <li>• कल्पेश वाघ</li>
+    <li>• ज्ञानेश्वर वाघ</li>
+  </ul>
+  <div class="images-vertical">
+    <img src="72a646b7-9985-4f91-996e-0bd2f4d4769e - Copy (2).html.jpeg" alt="Management Image 1">
+    <img src="e4909a6e-f14c-40dd-a702-c7edc02a3473 - Copy.jpeg" alt="Management Image 2">
+    <img src="f962f2cd-a6c3-416e-b120-cff1b3c741a0.jpeg" alt="Management Image 3">
+  </div>
+</section>
+
+<section id="social">
+  <h2>सोशल मीडिया वर जोडा</h2>
+  <div>
+    <a href="https://www.instagram.com/shiv_prathishtan._001?igsh=MWUyMHVlYThmdjIxNw==" target="_blank" class="instagram">इंस्टाग्राम</a>
+    <a href="https://www.youtube.com/@motivationalvideo7743" target="_blank" class="youtube">यूट्यूब</a>
+  </div>
+</section>
+
+<script>
+function showSection(id) {
+    document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+    document.getElementById(id).classList.add("active");
+}
+</script>
+
+</body>
+</html>
